@@ -14,6 +14,7 @@ gi.require_version('Gst', '1.0')
 gi.require_version('GstRtspServer', '1.0')
 from gi.repository import GObject, Gst, GstRtspServer
 from gi.repository import GLib
+import sys
 
 def create_gst_element(element, name):
 	ele = Gst.ElementFactory.make(element,name)
